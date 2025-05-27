@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="%PUBLIC_URL%/720max.css" media="screen and (max-width:720px)">
+  <link rel="stylesheet" href="%PUBLIC_URL%/721min.css" media="screen and (min-width:721px)">
+  <link rel="stylesheet" href="%PUBLIC_URL%/1200min.css" media="screen and (min-width:1200px)">
+  <link rel="stylesheet" href="%PUBLIC_URL%/1400min.css" media="screen and (min-width:1400px)">
+
+
+
+  <title>ELEC STORE</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+
+
+  <button class="scrol">
+    <i class="material-icons">arrow_upward</i>
+  </button>
+
+
+  <script type="text/javascript">
+
+    const scrol = document.querySelector(".scrol");
+    scrol.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      });
+    });
+
+
+
+
+
+    const menuIcon = document.querySelector('.burger-menu');
+
+    const navbar = document.querySelector('#navbar');
+
+    menuIcon.addEventListener('click', () => {
+      navbar.classList.toggle("change");
+    })
+
+window.addEventListener('DOMContentLoaded', () => {
+  const iphoneBtn = document.querySelector(".iphone-btn2");
+  if (!iphoneBtn) return;
+
+  iphoneBtn.onclick = function () {
+    const icons = [
+      document.querySelector(".icon-a"),
+      document.querySelector(".icon-b"),
+      document.querySelector(".icon-c"),
+      document.querySelector(".icon-d"),
+    ];
+
+    icons.forEach(icon => {
+      if (!icon) return;
+
+      if (icon.style.display === "unset" || icon.style.display === "") {
+        icon.style.display = "none";
+        icon.style.transition = "";
+        icon.style.filter = "";
+      } else {
+        icon.style.display = "unset";
+        icon.style.filter = "blur(20px)";
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            icon.style.transition = `-webkit-filter .3s linear 0s`;
+            icon.style.filter = "none";
+          });
+        });
+      }
+    });
+  };
+});
+
+
+
+  </script>
+</body>
+
+</html>

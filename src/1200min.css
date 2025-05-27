@@ -1,0 +1,154 @@
+@media screen and (min-width: 1200px) {
+.logo{
+    width: 200px;
+    flex-wrap: wrap;
+}
+.nav-part-2 ul li{
+    display: inline;
+    margin: 0 .9em;
+    font-size: 18.5px;
+    color: #000;
+    position: relative;
+    font-weight: bold;
+    
+
+}
+
+#arrivals{
+    width: 100%;
+    height: 100%;
+    margin-top: 90px;
+    padding: 0 20px;
+    
+}
+.section-title{
+    font-size: 35px;
+}
+
+
+
+#products h4{
+    font-size: 35px;
+}
+.top-products-container{
+    width: 100%;
+    display: flex;
+    padding: 0 0.5em;
+
+}
+
+
+.iphone-img{
+    width: 420px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-start-start-radius: 15px;
+    border-end-start-radius: 15px;
+    transition: all 0.5s ease-in;
+
+}
+.iphone-img img{
+    width: 320px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.iphone-img img:hover{
+    transform: rotate(-5deg);
+}
+
+
+.iphone-txt{
+    width: 0px;
+    height: 0;
+    padding-right: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-start-end-radius: 50px;
+    border-end-end-radius: 50px;
+    transition: all 0.5s;
+    overflow: hidden;
+    opacity: 0;
+}
+.iphone-txt:hover{
+    width: 450px;
+    height: 500px;
+    opacity: 100%;
+
+}
+
+.iphone-name{
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: .02em;
+    margin-left: 20px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+
+
+
+    
+}
+.iphone-img:hover ~ .iphone-txt{
+    width: 450px;
+    height: 500px;
+    opacity: 100%;
+
+}
+.iphone-txt p{
+    font-size: 20px;
+    color: #fff;
+    line-height:25px;
+    margin-left: 20px;
+    font-family: 'Varela Round', sans-serif;
+
+
+}
+
+
+
+
+
+
+.about-txt{
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+
+.scrol{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #EF9273;
+    box-shadow: 0 0 10px #EF9273;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s ;
+    
+}
+
+.scrol i{
+    font-size: 25px;
+}
+
+
+
+
+
+
+}

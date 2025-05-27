@@ -1,0 +1,99 @@
+@media screen and (min-width: 1400px) {
+
+.logo{
+    width: 250px;
+    flex-wrap: wrap;
+}
+.nav-part-2 ul li{
+    display: inline;
+    margin: 1em;
+    font-size: 24px;
+    color: #000;
+    position: relative;
+    font-weight: bold;
+    
+
+}
+
+
+
+.iphone-img{
+    width: 520px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-start-start-radius: 15px;
+    border-end-start-radius: 15px;
+    transition: all 0.5s ease-in;
+
+}
+.iphone-img img{
+    width: 360px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.iphone-img img:hover{
+    transform: rotate(-5deg);
+
+}
+
+
+.iphone-txt{
+    width: 0px;
+    height: 600px;
+    padding-right: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-start-end-radius: 50px;
+    border-end-end-radius: 50px;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.iphone-name{
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: .02em;
+    margin-left: 20px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 10px;
+
+
+
+    
+}
+.iphone-txt:hover{
+    width: 550px;
+}
+.iphone-img:hover ~ .iphone-txt{
+    width: 550px;
+}
+.iphone-txt p{
+    font-size: 25px;
+    color: #fff;
+    line-height:30px;
+    margin-left: 20px;
+    font-family: 'Varela Round', sans-serif;
+
+
+}
+
+.iphone-btn{
+    width: 140px;
+    height: 50px;
+    background-color: #fff;
+    margin-left: 20px;
+    margin-top: 18px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+}

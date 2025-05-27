@@ -1,0 +1,67 @@
+#arrivals{
+    width: 100%;
+    height: 100%;
+    margin-top: 90px;
+    padding: 0 50px;
+    
+}
+
+.arrivals-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1;
+}
+.arrivals-1{
+    width: 28%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+}
+.arrivals-1 img{
+    width: 100%;
+}
+.arrivals-2{
+    width: 40%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.arrivals-2 img{
+    width: 100%;
+}
+.ar-im-1{
+    
+    width: 100%;
+    display: flex;
+
+}
+.ar-im-2{
+    width: 100%;
+    display: flex;
+
+}
+
+
+
+
+
+
+
+
+.arrivals-3{
+    display: flex;
+    justify-content: right;
+    width: 28%;
+    position: relative;
+    align-items: center;
+
+}
+.arrivals-3 img{
+    width: 100%;
+}

@@ -1,0 +1,227 @@
+#products{
+    width: 100%;
+    margin-top: 90px;
+    height: 100%;
+    justify-content: center;
+
+}
+
+#products h4{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 4px;
+
+}
+
+.products-container{
+    width: 100%;
+    display: flex;
+    padding: 4em 2em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-box{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    flex-basis: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;   
+    transition: all 0.4s ease-in-out;
+    margin: 1.4em 1em;
+
+}
+.product-box:hover{
+    transform: translateY(-10px);
+}
+.img-box{
+    height: 50%;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.product-img{
+    text-align: center;
+    height: 100%;
+    transition: all 0.75s;
+    position: absolute;
+    
+}
+.image1{
+    position: absolute;
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+    right: 16px;
+    top: 0;
+    transition: all 0.3s;
+    z-index: 99;
+
+}
+
+.image1:hover ~ .img-text{
+    height: 100%;
+    opacity: 100%;
+}
+.image1:hover{
+    transform: rotate(45deg);
+}
+.img-text{
+    width: 100%;
+    height: 0%;
+    background-color: #0a0a0a8e;
+    z-index: 59;
+    transition: all 0.5s;
+    overflow: hidden;
+    opacity: 0%;
+
+}
+.img-text:hover{
+    height: 100%;
+    opacity: 100%;
+
+
+
+}
+.img-text-p{
+    padding-top: 5px;
+    padding-left: .5em;
+    color: rgba(255, 255, 255, 0.719);
+    line-height: 21px;
+    text-align: left;
+}
+.xbox-txt{
+    font-size: 12px;
+}
+.txt-14{
+    font-size: 14px;
+}
+.details-box{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    text-align: center;
+}
+.details-box h5{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.details-box p{
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.781);
+
+}
+p.coffe-maker{
+    font-size: 14px;
+}
+p.vacuum{
+    font-size: 13px;
+}
+p.retro-fan{
+    font-size: 13px;
+}
+.rate{
+    margin-top: 10px;
+    color: #EF9273;
+    transition: all 0.1s;
+}
+.rate :hover{
+    color: rgba(175, 77, 45, 0.788)
+
+}
+.details-box h6{
+    font-size: 21px;
+    margin-top: 10px ;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.add-tc{
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #EF9273;
+    padding: 8px 6px;
+    border-radius: 100px;
+    color: #fff;
+    transition: all 0.4s ;
+
+}
+.add-tc:hover{
+    background-color: rgba(175, 77, 45, 0.788)
+
+}
+.top-products{
+    width: 100%;
+    height: 100%;
+    flex-basis: 1;
+    justify-content: space-evenly;
+}
+.top-products h5{
+    margin-bottom: 50px;
+}
+.top-products-container{
+    width: 100%;
+    display: flex;
+    padding: 0 2.5em;
+
+
+}
+
+.top-ls{
+    width: 58%;
+    height: 40%;
+    position: relative;
+    overflow: hidden;
+    height: unset;
+    display: flex;
+    margin-right: .0em;
+    align-items: center;
+
+
+}
+
+.top-ls img{
+    width: 100%;
+}
+.top-rs{
+    width: 40%;
+    height: unset;
+    display: flex;
+    flex-basis: 1;
+    position: relative;
+    overflow: hidden;
+    margin-left: .6em;
+    border-radius: 8px;
+
+
+
+
+}
+
+.top-rs p{
+    font-size: 70px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    font-weight: bolder;
+    display: flex;
+    text-transform: uppercase;
+    color: #EF9273;
+}
+
+
+.top-rs a {
+    width: 100%;
+}
+.top-rs a img{
+
+    width: 100%;
+
+}
